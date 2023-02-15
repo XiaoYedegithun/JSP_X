@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Login</title>
+    <style>
+        body {
+            background-color: #F2F2F2;
+            font-family: Arial, sans-serif;
+        }
+        form {
+            width: 300px;
+            height: 280px;
+            margin: 0 auto;
+            background-color: #FFFFFF;
+            border-radius: 5px;
+            box-shadow: 0 0 5px #999999;
+            padding: 20px;
+        }
+        table {
+            margin: 0 auto;
+        }
+        td {
+            text-align: right;
+        }
+        input[type="text"], input[type="password"] {
+            width: 150px;
+            height: 20px;
+            border-radius: 5px;
+            border: 1px solid #CCCCCC;
+            padding: 5px;
+        }
+        input[type="submit"], input[type="button"] {
+            width: 80px;
+            height: 30px;
+            background-color: #4CAF50;
+            color: #FFFFFF;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            margin-right: 10px;
+        }
+        input[type="submit"]:hover, input[type="button"]:hover {
+            background-color: #3E8E41;
+        }
+    </style>
+</head>
+<body>
+<form action="LoginServlet" method="post">
+    <table>
+        <tr>
+            <td colspan="2"><h2>Login</h2></td>
+        </tr>
+        <tr>
+            <td><label for="userName">Username:</label></td>
+            <td><input type="text" name="userName" id="userName" required></td>
+        </tr>
+        <tr>
+            <td><label for="password">Password:</label></td>
+            <td><input type="password" name="password" id="password" required></td>
+        </tr>
+        <tr>
+            <td colspan="2">
+                <input type="submit" value="Login">
+                <input type="button" value="Register">
+            </td>
+        </tr>
+    </table>
+</form>
+</body>
+</html>
