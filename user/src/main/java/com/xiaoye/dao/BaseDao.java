@@ -4,24 +4,21 @@ package com.xiaoye.dao;
 import java.sql.*;
 
 public class BaseDao {
-    private static final String url = "jdbc:mysql://127.0.0.1:3306/jsp_x?useUnicode=true&useSSL=false&characterEncoding=UTF8&serverTimezone=UTC";
+    private static final String url = "jdbc:mysql://127.0.0.1:3306/jsp_x?characterEncoding=utf-8&serverTimezone=GMT&useSSL=false";
     private static final String name = "root";
     private static final String password = "123456";
 
     public static Connection getcon() {
         Connection connection = null;
         try {
-            Class.forName("com.mysql.cj.jdbc.Driver");
+            Class.forName("com.mysql.jdbc.Driver");
             connection = DriverManager.getConnection(url, name, password);
         } catch (Exception e) {
-            e.printStackTrace();
+            throw new RuntimeException(e);
         }
         return connection;
     }
 
-    public static void main(String[] args) {
-        System.out.println(getcon());
-    }
     public static void closeAll(ResultSet rs, Statement sta, Connection connection) {
         try {
             if (rs != null) {
