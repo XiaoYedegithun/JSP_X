@@ -42,7 +42,7 @@
            //通过id获取到对应输入框的值
         var uname=document.getElementById("username").value;
         var pwd=document.getElementById("pwd").value;
-        alert("账号："+uname+",密码："+pwd)
+        location.href="http://localhost:8080/JSP_0220/login?userName="+uname+"&pwd="+pwd;
     }
 </script>
 </div>
