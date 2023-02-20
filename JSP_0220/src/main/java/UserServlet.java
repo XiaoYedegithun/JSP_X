@@ -32,9 +32,9 @@ public class UserServlet extends HttpServlet {
             PreparedStatement pr = con.prepareStatement(sql);
             ResultSet rs = pr.executeQuery();
             if(rs.next()){
-                out.println("<h1>登录成功</h1>");
+                resp.sendRedirect("admin/admin.jsp");
             }else {
-                out.println("<span>失败</span>");
+                out.write("<script>alert('登录失败！');location.href='login.jsp'</script>");
             }
         } catch (ClassNotFoundException e) {
             throw new RuntimeException(e);

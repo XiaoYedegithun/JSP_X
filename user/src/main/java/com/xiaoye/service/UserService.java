@@ -7,7 +7,6 @@ import java.util.List;
 public interface UserService {
     /**
      * 登录的方法
-     *
      * @param user 登录的用户对象
      * @return 用户对象
      */
@@ -15,7 +14,6 @@ public interface UserService {
 
     /**
      * 查询数据库中用户数
-     *
      * @return 所有用户数量
      */
     public int count();

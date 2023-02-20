@@ -3,6 +3,9 @@
   <component name="ExternalStorageConfigurationManager" enabled="true" />
   <component name="FrameworkDetectionExcludesConfiguration">
     <file type="web" url="file://$PROJECT_DIR$/JSP_0220" />
+    <file type="web" url="file://$PROJECT_DIR$/mybatis" />
+    <file type="web" url="file://$PROJECT_DIR$/SMplus" />
+    <file type="web" url="file://$PROJECT_DIR$/Three-tier_architecture" />
     <file type="web" url="file://$PROJECT_DIR$/user" />
   </component>
   <component name="MavenProjectsManager">
@@ -10,10 +13,13 @@
       <list>
         <option value="$PROJECT_DIR$/user/pom.xml" />
         <option value="$PROJECT_DIR$/JSP_0220/pom.xml" />
+        <option value="$PROJECT_DIR$/Three-tier_architecture/pom.xml" />
+        <option value="$PROJECT_DIR$/mybatis/pom.xml" />
+        <option value="$PROJECT_DIR$/SMplus/pom.xml" />
       </list>
     </option>
   </component>
-  <component name="ProjectRootManager">
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_19" project-jdk-name="1.8" project-jdk-type="JavaSDK">
     <output url="file://$PROJECT_DIR$/out" />
   </component>
 </project>
